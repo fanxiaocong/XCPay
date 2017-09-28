@@ -91,10 +91,16 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "XCPay/**/*.{h,m}"
+  s.source_files  = "XCPay/Classes/*.{h,m}"
   s.subspec 'XCPayPlatformConfigure' do |config|
-  	config.source_files = "XCPay/Classes/XCPayPlatformConfigure/**/*.{h,m}"
+  	config.source_files = "XCPay/Classes/XCPayPlatformConfigure/*.{h,m}"
+	config.resource	= "*.xml"
   end
+
+  s.subspec 'XCPayProtocol' do |protocol|
+ 	protocol.source_files = "XCPay/Classes/XCPayProtocol/*"
+  end
+
   #  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

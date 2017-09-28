@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "XCPay/**/*.{h,m}"
   s.subspec 'XCPayPlatformConfigure' do |config|
-  	config.source_file = "XCPay/Classes/XCPayPlatformConfigure/**/*.{h,m}"
+  	config.source_files = "XCPay/Classes/XCPayPlatformConfigure/**/*.{h,m}"
   end
   #  s.exclude_files = "Classes/Exclude"
 

@@ -93,8 +93,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "XCPay/Classes/*.{h,m}"
   s.subspec 'XCPayPlatformConfigure' do |config|
-  	config.source_files = "XCPay/Classes/XCPayPlatformConfigure/*.{h,m}"
-	config.resource	= "*.xml"
+  	config.source_files = "XCPay/Classes/XCPayPlatformConfigure/*"
   end
 
   s.subspec 'XCPayProtocol' do |protocol|

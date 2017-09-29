@@ -29,7 +29,7 @@
 {
     self.platforms = [NSMutableArray array];
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"XCPayConfigure" ofType:@"xml"];
+    NSString *filePath = [[NSBundle bundleForClass:self.class] pathForResource:@"XCPayConfigure" ofType:@"xml"];
     NSURL *fileURL = [NSURL fileURLWithPath:filePath];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:fileURL];
     parser.delegate = self;

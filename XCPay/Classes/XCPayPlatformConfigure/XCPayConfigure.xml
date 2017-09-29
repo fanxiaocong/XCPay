@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<pay>
-    <platform id="1" factoryName="AliPayFactory" platformName="Alipay" isOpen="YES"/>
-    <platform id="2" factoryName="WXPayFactory" platformName="WXPay" isOpen="YES"/>
-</pay>

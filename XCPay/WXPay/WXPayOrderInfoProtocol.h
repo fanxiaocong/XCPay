@@ -16,18 +16,18 @@
 
 @required
 /** 👀 应用ID 👀 */
-@property (copy, nonatomic) NSString *appId;
+@property (copy, nonatomic, readonly) NSString *wx_appId;
 /** 商家向财付通申请的商家id */
-@property (copy, nonatomic) NSString *partnerId;
+@property (copy, nonatomic, readonly) NSString *wx_partnerId;
 /** 预支付订单 */
-@property (copy, nonatomic) NSString *prepayId;
+@property (copy, nonatomic, readonly) NSString *wx_prepayId;
 /** 随机串，防重发 */
-@property (copy, nonatomic) NSString *nonceStr;
+@property (copy, nonatomic, readonly) NSString *wx_nonceStr;
 /** 时间戳，防重发 */
-@property (assign, nonatomic) UInt32 timeStamp;
+@property (assign, nonatomic, readonly) UInt32 wx_timeStamp;
 /** 商家根据财付通文档填写的数据和签名 */
-@property (copy, nonatomic) NSString *package;
+@property (copy, nonatomic, readonly) NSString *wx_package;
 /** 商家根据微信开放平台文档对数据做的签名 */
-@property (copy, nonatomic) NSString *sign;
+@property (copy, nonatomic, readonly) NSString *wx_sign;
 
 @end

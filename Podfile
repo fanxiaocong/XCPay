@@ -4,10 +4,9 @@
 target 'XCPayExample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   use_frameworks!
-
-  pod 'XCMacros', '~> 1.0.0'
  
-  # Pods for XCPayExample
+  pod 'XCThirdPlatformSDK/AlipaySDK'
+  pod 'XCThirdPlatformSDK/WeChatSDK'
 
   target 'XCPayExampleTests' do
     inherit! :search_paths

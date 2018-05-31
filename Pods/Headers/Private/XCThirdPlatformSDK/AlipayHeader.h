@@ -1,0 +1,1 @@
+../../../XCThirdPlatformSDK/XCThirdPlatformSDK/Classes/AlipaySDK/AlipayHeader.h

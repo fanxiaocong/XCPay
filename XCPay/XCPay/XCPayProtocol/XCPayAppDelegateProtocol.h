@@ -18,18 +18,18 @@
 #pragma mark - 👀 AppDelegate 相关方法 👀 💤
 
 @optional
-- (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 // iOS 9.0 之前
-- (void)application:(UIApplication *)application handleOpenURL:(NSURL *)url;
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url;
 
-- (void)application:(UIApplication *)application
+- (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation;
 
 // iOS 9.0 以后使用
-- (void)application:(UIApplication *)app
+- (BOOL)application:(UIApplication *)app
             openURL:(NSURL *)url
             options:(NSDictionary<NSString*, id> *)options;
 

@@ -13,14 +13,21 @@
 
 #import <Foundation/Foundation.h>
 #import "XCPayFactoryProtocol.h"
+#import "XCPayPlatformConfigure.h"
 
-/// 微信平台
-extern NSString * const AlipayPlatform;
-/// 支付宝平台
-extern NSString * const WXPayPlatform;
 
 
 @interface XCPayManager : NSObject
+
+/**
+ *  配置支付相关的参数（在AppDelegate配置）
+ *
+ *  @param activePlatforms  支付平台(@[@(XCPayPlatformTypeAliy)、@(XCPayPlatformTypeWeXin)])
+ *  @param configure        配置
+ */
++ (void)configurePayActivePlatforms:(NSArray<NSNumber *> *)activePlatforms
+                  platformConfigure:(void(^)(XCPayPlatformConfigure *config))configure;
+
 
 + (instancetype)sharePayManager;
 
@@ -31,6 +38,7 @@ extern NSString * const WXPayPlatform;
 /**
  *  根据支付平台类型，返回对应的工厂实例
  */
-- (id<XCPayFactoryProtocol>)payFactoryWithPlatform:(NSString *)platform;
+- (id<XCPayFactoryProtocol>)payFactoryWithPlatformType:(XCPayPlatformType)platformType;
+
 
 @end

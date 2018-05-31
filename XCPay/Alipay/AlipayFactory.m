@@ -15,13 +15,34 @@
 
 #import "Alipay.h"
 
+
 @implementation AlipayFactory
+{
+    XCPayPlatformConfigure *_aliyConfigure;
+    Alipay *_alipay;
+}
 
 #pragma mark - 📕 👀 PayFactoryProtocol 👀
 
+- (instancetype)initWithPlatformConfigure:(XCPayPlatformConfigure *)configure
+{
+    if (self = [super init])
+    {
+        _aliyConfigure = configure;
+        _alipay = [[Alipay alloc] initWithConfigure:configure];
+    }
+    
+    return self;
+}
+
+- (XCPayPlatformConfigure *)configure
+{
+    return _aliyConfigure;
+}
+
 - (id<XCPayProtocol>)pay
 {
-    return [[Alipay alloc] init];
+    return _alipay;
 }
 
 @end

@@ -15,15 +15,11 @@
 		1E604E161F789B3B0015042B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E604E141F789B3B0015042B /* LaunchScreen.storyboard */; };
 		1E604E211F789B3B0015042B /* XCPayExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E604E201F789B3B0015042B /* XCPayExampleTests.m */; };
 		1E604E2C1F789B3B0015042B /* XCPayExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E604E2B1F789B3B0015042B /* XCPayExampleUITests.m */; };
-		1E8B65FD1F7DE8BD002FEC79 /* XCPayApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B65F01F7DE8BD002FEC79 /* XCPayApplication.m */; };
+		1E63BD0020BFCA6000812E53 /* WXPayParamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E63BCFF20BFCA6000812E53 /* WXPayParamModel.m */; };
+		1E8B65FD1F7DE8BD002FEC79 /* XCPayAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B65F01F7DE8BD002FEC79 /* XCPayAppDelegate.m */; };
 		1E8B65FE1F7DE8BD002FEC79 /* XCPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B65F21F7DE8BD002FEC79 /* XCPayManager.m */; };
-		1E8B65FF1F7DE8BD002FEC79 /* XCPayConfigure.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B65F41F7DE8BD002FEC79 /* XCPayConfigure.xml */; };
-		1E8B66001F7DE8BD002FEC79 /* XCPayPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B65F61F7DE8BD002FEC79 /* XCPayPlatform.m */; };
-		1E8B66011F7DE8BD002FEC79 /* XCPayPlatformXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B65F81F7DE8BD002FEC79 /* XCPayPlatformXMLParser.m */; };
 		1E8B66071F7DEEED002FEC79 /* Alipay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B66041F7DEEED002FEC79 /* Alipay.m */; };
 		1E8B66081F7DEEED002FEC79 /* AlipayFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B66061F7DEEED002FEC79 /* AlipayFactory.m */; };
-		1E8B660C1F7DEF82002FEC79 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B660A1F7DEF82002FEC79 /* AlipaySDK.bundle */; };
-		1E8B660D1F7DEF82002FEC79 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8B660B1F7DEF82002FEC79 /* AlipaySDK.framework */; };
 		1E8B66141F7DEFC8002FEC79 /* WXPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B66101F7DEFC8002FEC79 /* WXPay.m */; };
 		1E8B66151F7DEFC8002FEC79 /* WXPayFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B66121F7DEFC8002FEC79 /* WXPayFactory.m */; };
 		1E8B66181F7DF043002FEC79 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8B66171F7DF043002FEC79 /* libc++.tbd */; };
@@ -35,9 +31,8 @@
 		1E8B66321F7DF10E002FEC79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8B66231F7DF076002FEC79 /* CoreGraphics.framework */; };
 		1E8B66331F7DF112002FEC79 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8B662A1F7DF0CC002FEC79 /* CFNetwork.framework */; };
 		1E8B66341F7DF118002FEC79 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8B662C1F7DF0D3002FEC79 /* CoreMotion.framework */; };
-		1E8B663B1F7DF4D9002FEC79 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8B66361F7DF4D9002FEC79 /* libWeChatSDK.a */; };
-		1E8B663C1F7DF4D9002FEC79 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B66371F7DF4D9002FEC79 /* README.txt */; };
 		1E8B663E1F7DF673002FEC79 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8B663D1F7DF673002FEC79 /* libsqlite3.tbd */; };
+		1EF194D020BF93D3007F047C /* XCPayPlatformConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF194CF20BF93D3007F047C /* XCPayPlatformConfigure.m */; };
 		32F918217C631F1F80FE1C73 /* Pods_XCPayExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0311A3A043F2240D9127FFA /* Pods_XCPayExampleUITests.framework */; };
 		9A0AFAC3FF6782A7D5C6B077 /* Pods_XCPayExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE051660FE8CDE856FD0703 /* Pods_XCPayExampleTests.framework */; };
 		F76A5E026A79E8FF9717638B /* Pods_XCPayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD425EE6936C6E5DA340FB6 /* Pods_XCPayExample.framework */; };
@@ -78,15 +73,12 @@
 		1E604E271F789B3B0015042B /* XCPayExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCPayExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E604E2B1F789B3B0015042B /* XCPayExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPayExampleUITests.m; sourceTree = "<group>"; };
 		1E604E2D1F789B3B0015042B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E8B65EF1F7DE8BD002FEC79 /* XCPayApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayApplication.h; sourceTree = "<group>"; };
-		1E8B65F01F7DE8BD002FEC79 /* XCPayApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPayApplication.m; sourceTree = "<group>"; };
+		1E63BCFE20BFCA6000812E53 /* WXPayParamModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXPayParamModel.h; sourceTree = "<group>"; };
+		1E63BCFF20BFCA6000812E53 /* WXPayParamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXPayParamModel.m; sourceTree = "<group>"; };
+		1E8B65EF1F7DE8BD002FEC79 /* XCPayAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayAppDelegate.h; sourceTree = "<group>"; };
+		1E8B65F01F7DE8BD002FEC79 /* XCPayAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPayAppDelegate.m; sourceTree = "<group>"; };
 		1E8B65F11F7DE8BD002FEC79 /* XCPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayManager.h; sourceTree = "<group>"; };
 		1E8B65F21F7DE8BD002FEC79 /* XCPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPayManager.m; sourceTree = "<group>"; };
-		1E8B65F41F7DE8BD002FEC79 /* XCPayConfigure.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = XCPayConfigure.xml; sourceTree = "<group>"; };
-		1E8B65F51F7DE8BD002FEC79 /* XCPayPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayPlatform.h; sourceTree = "<group>"; };
-		1E8B65F61F7DE8BD002FEC79 /* XCPayPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPayPlatform.m; sourceTree = "<group>"; };
-		1E8B65F71F7DE8BD002FEC79 /* XCPayPlatformXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayPlatformXMLParser.h; sourceTree = "<group>"; };
-		1E8B65F81F7DE8BD002FEC79 /* XCPayPlatformXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPayPlatformXMLParser.m; sourceTree = "<group>"; };
 		1E8B65FA1F7DE8BD002FEC79 /* XCPayAppDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayAppDelegateProtocol.h; sourceTree = "<group>"; };
 		1E8B65FB1F7DE8BD002FEC79 /* XCPayFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayFactoryProtocol.h; sourceTree = "<group>"; };
 		1E8B65FC1F7DE8BD002FEC79 /* XCPayProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayProtocol.h; sourceTree = "<group>"; };
@@ -94,8 +86,6 @@
 		1E8B66041F7DEEED002FEC79 /* Alipay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alipay.m; sourceTree = "<group>"; };
 		1E8B66051F7DEEED002FEC79 /* AlipayFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlipayFactory.h; sourceTree = "<group>"; };
 		1E8B66061F7DEEED002FEC79 /* AlipayFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlipayFactory.m; sourceTree = "<group>"; };
-		1E8B660A1F7DEF82002FEC79 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
-		1E8B660B1F7DEF82002FEC79 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		1E8B660F1F7DEFC8002FEC79 /* WXPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPay.h; sourceTree = "<group>"; };
 		1E8B66101F7DEFC8002FEC79 /* WXPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPay.m; sourceTree = "<group>"; };
 		1E8B66111F7DEFC8002FEC79 /* WXPayFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPayFactory.h; sourceTree = "<group>"; };
@@ -110,12 +100,9 @@
 		1E8B66231F7DF076002FEC79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1E8B662A1F7DF0CC002FEC79 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1E8B662C1F7DF0D3002FEC79 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		1E8B66361F7DF4D9002FEC79 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		1E8B66371F7DF4D9002FEC79 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		1E8B66381F7DF4D9002FEC79 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		1E8B66391F7DF4D9002FEC79 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		1E8B663A1F7DF4D9002FEC79 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		1E8B663D1F7DF673002FEC79 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1EF194CE20BF93D3007F047C /* XCPayPlatformConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPayPlatformConfigure.h; sourceTree = "<group>"; };
+		1EF194CF20BF93D3007F047C /* XCPayPlatformConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPayPlatformConfigure.m; sourceTree = "<group>"; };
 		431F03C5677CAF91D3F117F6 /* Pods-XCPayExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPayExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCPayExampleTests/Pods-XCPayExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		55C9B4F242A756AC806DAE7C /* Pods-XCPayExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPayExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCPayExampleUITests/Pods-XCPayExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5DF6ACE24E4FC92F89165943 /* Pods-XCPayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCPayExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCPayExample/Pods-XCPayExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,12 +124,10 @@
 				1E8B66321F7DF10E002FEC79 /* CoreGraphics.framework in Frameworks */,
 				1E8B66311F7DF106002FEC79 /* QuartzCore.framework in Frameworks */,
 				1E8B662F1F7DF0F6002FEC79 /* CoreTelephony.framework in Frameworks */,
-				1E8B663B1F7DF4D9002FEC79 /* libWeChatSDK.a in Frameworks */,
 				1E8B66301F7DF0F6002FEC79 /* CoreText.framework in Frameworks */,
 				1E8B662E1F7DF0ED002FEC79 /* SystemConfiguration.framework in Frameworks */,
 				1E8B661A1F7DF04C002FEC79 /* libz.tbd in Frameworks */,
 				1E8B66181F7DF043002FEC79 /* libc++.tbd in Frameworks */,
-				1E8B660D1F7DEF82002FEC79 /* AlipaySDK.framework in Frameworks */,
 				F76A5E026A79E8FF9717638B /* Pods_XCPayExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +181,8 @@
 				1E604E0A1F789B3B0015042B /* AppDelegate.mm */,
 				1E604E0C1F789B3B0015042B /* ViewController.h */,
 				1E604E0D1F789B3B0015042B /* ViewController.m */,
+				1E63BCFE20BFCA6000812E53 /* WXPayParamModel.h */,
+				1E63BCFF20BFCA6000812E53 /* WXPayParamModel.m */,
 				1E604E0F1F789B3B0015042B /* Main.storyboard */,
 				1E604E121F789B3B0015042B /* Assets.xcassets */,
 				1E604E141F789B3B0015042B /* LaunchScreen.storyboard */,
@@ -244,26 +231,15 @@
 		1E8B65EE1F7DE8BD002FEC79 /* XCPay */ = {
 			isa = PBXGroup;
 			children = (
-				1E8B65EF1F7DE8BD002FEC79 /* XCPayApplication.h */,
-				1E8B65F01F7DE8BD002FEC79 /* XCPayApplication.m */,
+				1E8B65EF1F7DE8BD002FEC79 /* XCPayAppDelegate.h */,
+				1E8B65F01F7DE8BD002FEC79 /* XCPayAppDelegate.m */,
 				1E8B65F11F7DE8BD002FEC79 /* XCPayManager.h */,
 				1E8B65F21F7DE8BD002FEC79 /* XCPayManager.m */,
-				1E8B65F31F7DE8BD002FEC79 /* XCPayPlatformConfigure */,
+				1EF194CE20BF93D3007F047C /* XCPayPlatformConfigure.h */,
+				1EF194CF20BF93D3007F047C /* XCPayPlatformConfigure.m */,
 				1E8B65F91F7DE8BD002FEC79 /* XCPayProtocol */,
 			);
 			path = XCPay;
-			sourceTree = "<group>";
-		};
-		1E8B65F31F7DE8BD002FEC79 /* XCPayPlatformConfigure */ = {
-			isa = PBXGroup;
-			children = (
-				1E8B65F41F7DE8BD002FEC79 /* XCPayConfigure.xml */,
-				1E8B65F51F7DE8BD002FEC79 /* XCPayPlatform.h */,
-				1E8B65F61F7DE8BD002FEC79 /* XCPayPlatform.m */,
-				1E8B65F71F7DE8BD002FEC79 /* XCPayPlatformXMLParser.h */,
-				1E8B65F81F7DE8BD002FEC79 /* XCPayPlatformXMLParser.m */,
-			);
-			path = XCPayPlatformConfigure;
 			sourceTree = "<group>";
 		};
 		1E8B65F91F7DE8BD002FEC79 /* XCPayProtocol */ = {
@@ -283,18 +259,8 @@
 				1E8B66041F7DEEED002FEC79 /* Alipay.m */,
 				1E8B66051F7DEEED002FEC79 /* AlipayFactory.h */,
 				1E8B66061F7DEEED002FEC79 /* AlipayFactory.m */,
-				1E8B66091F7DEF82002FEC79 /* AlipaySDK */,
 			);
 			path = Alipay;
-			sourceTree = "<group>";
-		};
-		1E8B66091F7DEF82002FEC79 /* AlipaySDK */ = {
-			isa = PBXGroup;
-			children = (
-				1E8B660A1F7DEF82002FEC79 /* AlipaySDK.bundle */,
-				1E8B660B1F7DEF82002FEC79 /* AlipaySDK.framework */,
-			);
-			path = AlipaySDK;
 			sourceTree = "<group>";
 		};
 		1E8B660E1F7DEFC8002FEC79 /* WXPay */ = {
@@ -305,7 +271,6 @@
 				1E8B66111F7DEFC8002FEC79 /* WXPayFactory.h */,
 				1E8B66121F7DEFC8002FEC79 /* WXPayFactory.m */,
 				1E8B66131F7DEFC8002FEC79 /* WXPayOrderInfoProtocol.h */,
-				1E8B66351F7DF4D9002FEC79 /* WXApiSDK */,
 			);
 			path = WXPay;
 			sourceTree = "<group>";
@@ -328,18 +293,6 @@
 				D0311A3A043F2240D9127FFA /* Pods_XCPayExampleUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1E8B66351F7DF4D9002FEC79 /* WXApiSDK */ = {
-			isa = PBXGroup;
-			children = (
-				1E8B66361F7DF4D9002FEC79 /* libWeChatSDK.a */,
-				1E8B66371F7DF4D9002FEC79 /* README.txt */,
-				1E8B66381F7DF4D9002FEC79 /* WechatAuthSDK.h */,
-				1E8B66391F7DF4D9002FEC79 /* WXApi.h */,
-				1E8B663A1F7DF4D9002FEC79 /* WXApiObject.h */,
-			);
-			path = WXApiSDK;
 			sourceTree = "<group>";
 		};
 		CEAF60E0E3274776C711E9A8 /* Pods */ = {
@@ -366,8 +319,7 @@
 				1E604DFF1F789B3B0015042B /* Sources */,
 				1E604E001F789B3B0015042B /* Frameworks */,
 				1E604E011F789B3B0015042B /* Resources */,
-				FBBDBC47FC08D0B64F3E15F4 /* [CP] Embed Pods Frameworks */,
-				B51556D76DF7F65057390ED1 /* [CP] Copy Pods Resources */,
+				7FEAAE47739639F025C07597 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -386,8 +338,6 @@
 				1E604E181F789B3B0015042B /* Sources */,
 				1E604E191F789B3B0015042B /* Frameworks */,
 				1E604E1A1F789B3B0015042B /* Resources */,
-				B0CD770F7A0F78519FA73EC9 /* [CP] Embed Pods Frameworks */,
-				9CB3FCE6C579063AF035B75D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,8 +357,6 @@
 				1E604E231F789B3B0015042B /* Sources */,
 				1E604E241F789B3B0015042B /* Frameworks */,
 				1E604E251F789B3B0015042B /* Resources */,
-				E6D584B1890C75BDEABD041F /* [CP] Embed Pods Frameworks */,
-				834B15A668733F3B9E7D12C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -470,11 +418,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E8B660C1F7DEF82002FEC79 /* AlipaySDK.bundle in Resources */,
-				1E8B65FF1F7DE8BD002FEC79 /* XCPayConfigure.xml in Resources */,
 				1E604E161F789B3B0015042B /* LaunchScreen.storyboard in Resources */,
 				1E604E131F789B3B0015042B /* Assets.xcassets in Resources */,
-				1E8B663C1F7DF4D9002FEC79 /* README.txt in Resources */,
 				1E604E111F789B3B0015042B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,19 +459,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		834B15A668733F3B9E7D12C5 /* [CP] Copy Pods Resources */ = {
+		7FEAAE47739639F025C07597 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XCPayExample/Pods-XCPayExample-resources.sh",
+				"${PODS_ROOT}/XCThirdPlatformSDK/XCThirdPlatformSDK/Classes/AlipaySDK/AlipaySDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCPayExampleUITests/Pods-XCPayExampleUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCPayExample/Pods-XCPayExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		89D9CBFC225720444FED865E /* [CP] Check Pods Manifest.lock */ = {
@@ -547,51 +495,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CB3FCE6C579063AF035B75D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCPayExampleTests/Pods-XCPayExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0CD770F7A0F78519FA73EC9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCPayExampleTests/Pods-XCPayExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B51556D76DF7F65057390ED1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCPayExample/Pods-XCPayExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DB31880214FEFE080CF2D2CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -610,36 +513,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E6D584B1890C75BDEABD041F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCPayExampleUITests/Pods-XCPayExampleUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBBDBC47FC08D0B64F3E15F4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCPayExample/Pods-XCPayExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -649,15 +522,15 @@
 			files = (
 				1E604E0E1F789B3B0015042B /* ViewController.m in Sources */,
 				1E604E0B1F789B3B0015042B /* AppDelegate.mm in Sources */,
-				1E8B66001F7DE8BD002FEC79 /* XCPayPlatform.m in Sources */,
 				1E8B66071F7DEEED002FEC79 /* Alipay.m in Sources */,
-				1E8B65FD1F7DE8BD002FEC79 /* XCPayApplication.m in Sources */,
+				1E8B65FD1F7DE8BD002FEC79 /* XCPayAppDelegate.m in Sources */,
 				1E8B66141F7DEFC8002FEC79 /* WXPay.m in Sources */,
-				1E8B66011F7DE8BD002FEC79 /* XCPayPlatformXMLParser.m in Sources */,
 				1E604E081F789B3B0015042B /* main.m in Sources */,
+				1E63BD0020BFCA6000812E53 /* WXPayParamModel.m in Sources */,
 				1E8B66081F7DEEED002FEC79 /* AlipayFactory.m in Sources */,
 				1E8B66151F7DEFC8002FEC79 /* WXPayFactory.m in Sources */,
 				1E8B65FE1F7DE8BD002FEC79 /* XCPayManager.m in Sources */,
+				1EF194D020BF93D3007F047C /* XCPayPlatformConfigure.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

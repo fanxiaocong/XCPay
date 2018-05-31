@@ -12,10 +12,15 @@
  */
 
 #import "XCPayProtocol.h"
+#import "XCPayPlatformConfigure.h"
 
 @protocol XCPayFactoryProtocol <NSObject>
 
 @required
+/** 👀 配置 👀 */
+@property (strong, nonatomic, readonly) XCPayPlatformConfigure *configure;
+- (instancetype)initWithPlatformConfigure:(XCPayPlatformConfigure *)configure;
+
 /**
  *  返回具体的支付实例对象
  */

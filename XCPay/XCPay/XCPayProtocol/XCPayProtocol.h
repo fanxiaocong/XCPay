@@ -12,7 +12,7 @@
  */
 
 #import "XCPayAppDelegateProtocol.h"
-
+#import "XCPayPlatformConfigure.h"
 
 
 /**
@@ -40,6 +40,7 @@ typedef NS_ENUM(NSInteger, XCPayResultStatus)
 @protocol XCPayProtocol <XCPayAppDelegateProtocol>
 
 @required
+- (instancetype)initWithConfigure:(XCPayPlatformConfigure *)configure;
 /**
  *  开始支付
  *

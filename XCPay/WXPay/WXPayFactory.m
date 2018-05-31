@@ -16,12 +16,33 @@
 #import "WXPayFactory.h"
 
 @implementation WXPayFactory
+{
+    XCPayPlatformConfigure *_wxConfigure;
+    WXPay *_wxpay;
+}
 
-#pragma mark - 📕 👀 XCPayFactoryProtocol 👀
+#pragma mark - 📕 👀 PayFactoryProtocol 👀
+
+- (instancetype)initWithPlatformConfigure:(XCPayPlatformConfigure *)configure
+{
+    if (self = [super init])
+    {
+        _wxConfigure = configure;
+        _wxpay = [[WXPay alloc] initWithConfigure:configure];
+    }
+    
+    return self;
+}
+
+- (XCPayPlatformConfigure *)configure
+{
+    return _wxConfigure;
+}
 
 - (id<XCPayProtocol>)pay
 {
-    return [[WXPay alloc] init];
+    return _wxpay;
 }
 
 @end
+

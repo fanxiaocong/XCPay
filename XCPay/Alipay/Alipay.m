@@ -9,12 +9,11 @@
 #import "Alipay.h"
 
 
+/* --- 根据项目需要信息 支付宝 Api */
 #import <AlipaySDK/AlipaySDK.h>
-#import <XCMacros.h>
 
 
 // ------ 支付宝 AppScheme
-#define APP_SCHEME  @""
 #define URL_HOST    @"safepay"
 
 
@@ -22,12 +21,12 @@
 
 @property (copy, nonatomic) void(^completeHandle)(XCPayResultStatus resutStatus);
 
+@property (copy, nonatomic) NSString *appScheme;
+
 @end
 
 
-
 @implementation Alipay
-
 
 #pragma mark - 🔒 👀 Privite Method 👀
 
@@ -37,7 +36,7 @@
 
 - (void)payResultCallBack:(NSDictionary *)resultDic
 {
-    DLog(@"********支付宝支付结果回调：%@", resultDic);
+    NSLog(@"********支付宝支付结果回调：%@", resultDic);
     
     XCPayResultStatus resultStatus = XCPayResultStatusFailure;
     
@@ -75,13 +74,34 @@
     }
 }
 
-#pragma mark - 📕 👀 PayProtocol 👀
+#pragma mark - 📕 👀 XCPayProtocol 👀
+
+- (instancetype)initWithConfigure:(XCPayPlatformConfigure *)configure
+{
+    if (self = [super init])
+    {
+        self.appScheme = configure.appScheme;
+    }
+    
+    return self;
+}
 
 - (void)payWithOrderInfo:(id)orderInfo
           completeHandle:(void (^)(XCPayResultStatus))completeHandle
 {
+    if (![orderInfo isKindOfClass:[NSString class]])
+    {
+        if (completeHandle)
+        {
+            completeHandle(XCPayResultStatusFailure);
+        }
+        return;
+    }
+    
+    self.completeHandle = completeHandle;
+    
     //----- 调用支付结果开始支付
-    [[AlipaySDK defaultService] payOrder:orderInfo fromScheme:APP_SCHEME callback:^(NSDictionary *resultDic) {
+    [[AlipaySDK defaultService] payOrder:orderInfo fromScheme:self.appScheme callback:^(NSDictionary *resultDic) {
         
         /// 处理支付结果的回调
         [self payResultCallBack:resultDic];
@@ -89,28 +109,32 @@
 }
 
 
-#pragma mark - 📕 👀 PayAppDelegateProtocol 👀
+#pragma mark - 📕 👀 XCPayAppDelegateProtocol 👀
 
-- (void)application:(UIApplication *)application
-               openURL:(NSURL *)url
-     sourceApplication:(NSString *)sourceApplication
-            annotation:(id)annotation
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
 {
     /// 支付宝
     if ([url.host isEqualToString:URL_HOST])
     {
         // 支付跳转支付宝钱包进行支付，处理支付结果
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic){
-             /// 处理支付结果的回调
-             [self payResultCallBack:resultDic];
-         }];
+            /// 处理支付结果的回调
+            [self payResultCallBack:resultDic];
+        }];
+        
+        return YES;
     }
+    
+    return NO;
 }
 
 // iOS 9.0 以后使用
-- (void)application:(UIApplication *)app
-               openURL:(NSURL *)url
-               options:(NSDictionary<NSString*, id> *)options
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<NSString*, id> *)options
 {
     if ([url.host isEqualToString:URL_HOST])
     {
@@ -119,8 +143,11 @@
             /// 处理支付结果的回调
             [self payResultCallBack:resultDic];
         }];
+        
+        return YES;
     }
+    
+    return NO;
 }
-
 
 @end

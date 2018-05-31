@@ -1,0 +1,1 @@
+../../../XCThirdPlatformSDK/XCThirdPlatformSDK/Classes/WeChatSDK/WechatAuthSDK.h

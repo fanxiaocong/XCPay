@@ -1,12 +1,18 @@
 PODS:
-  - XCMacros (1.0.0)
+  - XCThirdPlatformSDK/AlipaySDK (0.0.1)
+  - XCThirdPlatformSDK/WeChatSDK (0.0.1)
 
 DEPENDENCIES:
-  - XCMacros (~> 1.0.0)
+  - XCThirdPlatformSDK/AlipaySDK
+  - XCThirdPlatformSDK/WeChatSDK
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - XCThirdPlatformSDK
 
 SPEC CHECKSUMS:
-  XCMacros: daff8f97f964479ede428c2986ba202f1c3a3525
+  XCThirdPlatformSDK: 2a4ae830b81d0b962659ba832c5aaa13176685cf
 
-PODFILE CHECKSUM: 02394777f81fecd5ba5dcf4a502cacadb277748c
+PODFILE CHECKSUM: a3e6c291c703cf46dfd5752bc0c153b9cf490006
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0

@@ -17,19 +17,20 @@
 #import "WXPayOrderInfoProtocol.h"
 
 
+/* 根据项目需求，集成 微信支付 Api */
 
 #import "WXApi.h"
 
-#define APP_KEY     @""
-#define URL_HOST    @"safe"
+#define URL_HOST    @"pay"
 
 
 @interface WXPay ()<WXApiDelegate>
 
 @property (copy, nonatomic) void(^completeHandle)(XCPayResultStatus resutStatus);
 
+@property (copy, nonatomic) NSString *appKey;
+
 @end
- 
 
 
 @implementation WXPay
@@ -77,68 +78,96 @@
 
 #pragma mark - 📕 👀 PayProtocol 👀
 
+- (instancetype)initWithConfigure:(XCPayPlatformConfigure *)configure
+{
+    if (self = [super init])
+    {
+        self.appKey = configure.appKey;
+    }
+    
+    return self;
+}
+
+
 - (void)payWithOrderInfo:(id<WXPayOrderInfoProtocol>)orderInfo
           completeHandle:(void (^)(XCPayResultStatus))completeHandle
 {
+    if (![orderInfo conformsToProtocol:@protocol(WXPayOrderInfoProtocol)])
+    {
+        if (completeHandle)
+        {
+            completeHandle(XCPayResultStatusFailure);
+        }
+        return;
+    }
+    
+    self.completeHandle = completeHandle;
+    
     PayReq *req     = [[PayReq alloc] init];
-    req.openID      = orderInfo.appId;
-    req.partnerId   = orderInfo.partnerId;
-    req.prepayId    = orderInfo.prepayId;
-    req.nonceStr    = orderInfo.nonceStr;
-    req.timeStamp   = orderInfo.timeStamp;
-    req.package     = orderInfo.package;
-    req.sign        = orderInfo.sign;
+    req.openID      = orderInfo.wx_appId;
+    req.partnerId   = orderInfo.wx_partnerId;
+    req.prepayId    = orderInfo.wx_prepayId;
+    req.nonceStr    = orderInfo.wx_nonceStr;
+    req.timeStamp   = orderInfo.wx_timeStamp;
+    req.package     = orderInfo.wx_package;
+    req.sign        = orderInfo.wx_sign;
     
     [WXApi sendReq:req];
 }
 
 #pragma mark - 📕 👀 PayAppDelegateProtocol 👀
 
-- (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // 注册微信 AppKey
-    [WXApi registerApp:APP_KEY];
+    return [WXApi registerApp:self.appKey];
 }
 
 // iOS 9.0 之前
-- (void)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
     /// 微信
     if ([url.host isEqualToString:URL_HOST])
     {
-        [WXApi handleOpenURL:url delegate:self];
+        return [WXApi handleOpenURL:url delegate:self];
     }
+    
+    return NO;
 }
 
-- (void)application:(UIApplication *)application
-               openURL:(NSURL *)url
-     sourceApplication:(NSString *)sourceApplication
-            annotation:(id)annotation
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
 {
     /// 微信
     if ([url.host isEqualToString:URL_HOST])
     {
-        [WXApi handleOpenURL:url delegate:self];
+        return [WXApi handleOpenURL:url delegate:self];
     }
+    
+    return NO;
 }
 
 // iOS 9.0 以后使用
-- (void)application:(UIApplication *)app
-               openURL:(NSURL *)url
-               options:(NSDictionary<NSString*, id> *)options
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<NSString*, id> *)options
 {
     /// 微信
     if ([url.host isEqualToString:URL_HOST])
     {
-        [WXApi handleOpenURL:url delegate:self];
+        return [WXApi handleOpenURL:url delegate:self];
     }
+    
+    return NO;
 }
 
 #pragma mark - 💉 👀 WXApiDelegate 👀
 
 - (void)onResp:(BaseResp *)resp
 {
-    /// 支付结果的回调
+    /// 处理支付结果
     [self payResultCallBack:resp];
 }
 

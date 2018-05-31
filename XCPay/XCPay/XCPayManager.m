@@ -13,17 +13,66 @@
 
 #import "XCPayManager.h"
 
-#import "XCPayPlatformXMLParser.h"
 
+@interface XCPayManager ()
 
-/// 微信平台
-NSString * const AlipayPlatform = @"Alipay";
-/// 支付宝平台
-NSString * const WXPayPlatform = @"WXPay";
+@property (strong, nonatomic) NSArray<XCPayPlatformConfigure *> *configures;
+@property (strong, nonatomic) NSArray *payFactorys;
 
+@end
 
 
 @implementation XCPayManager
+
+
+/**
+ *  配置支付相关的参数（在AppDelegate配置）
+ *
+ *  @param activePlatforms  支付平台(@[@(XCPayPlatformTypeAliy)、@(XCPayPlatformTypeWeXin)])
+ *  @param configure        配置
+ */
++ (void)configurePayActivePlatforms:(NSArray<NSNumber *> *)activePlatforms
+                  platformConfigure:(void(^)(XCPayPlatformConfigure *config))configure
+{
+    XCPayManager *mgr = [XCPayManager sharePayManager];
+    
+    NSMutableArray *payFactorys   = [NSMutableArray array];
+    [activePlatforms enumerateObjectsUsingBlock:^(NSNumber * _Nonnull platformNumber, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        XCPayPlatformType platformType = platformNumber.integerValue;
+        
+        /// 配置支付工厂
+        NSString *factoryName = @"AlipayFactory";
+        
+        switch (platformType)
+        {
+            case XCPayPlatformTypeAliy:
+            {
+                factoryName = @"AlipayFactory";
+                break;
+            }
+            case XCPayPlatformTypeWeXin:
+            {
+                factoryName = @"WXPayFactory";
+                break;
+            }
+        }
+        
+        /// 配置参数
+        XCPayPlatformConfigure *config = [[XCPayPlatformConfigure alloc] initWithPlatformType:platformType];
+        if (configure)
+        {
+            configure(config);
+        }
+        
+        Class factoryClass = NSClassFromString(factoryName);
+        id<XCPayFactoryProtocol> factory = [[factoryClass alloc] initWithPlatformConfigure:config];
+        [payFactorys addObject:factory];
+    }];
+    
+    mgr.payFactorys = payFactorys;
+}
+
 
 static id _instance = nil;
 
@@ -37,36 +86,33 @@ static id _instance = nil;
     return _instance;
 }
 
-- (instancetype)init
-{
-    if (self = [super init])
-    {
-        XCPayPlatformXMLParser *parser = [[XCPayPlatformXMLParser alloc] init];
-        
-        NSMutableArray *platforms = [NSMutableArray array];
-        for (XCPayPlatform *platform in parser.platforms)
-        {
-            Class factoryClass = NSClassFromString(platform.factoryName);
-            [platforms addObject:[[factoryClass alloc] init]];
-        }
-        
-        _allFactorys = platforms;
-    }
-    
-    return self;
-}
 #pragma mark - 🔓 👀 Public Method 👀
+
+/**
+ *  所有支付平台
+ */
+- (NSArray<id<XCPayFactoryProtocol>> *)allFactorys
+{
+    return self.payFactorys;
+}
 
 /**
  *  根据支付平台类型，返回对应的工厂实例
  */
-- (id<XCPayFactoryProtocol>)payFactoryWithPlatform:(NSString *)platform
+- (id<XCPayFactoryProtocol>)payFactoryWithPlatformType:(XCPayPlatformType)platformType
 {
     if (!self.allFactorys.count)      return NULL;
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"platformName == %@", platform];
+    for (id<XCPayFactoryProtocol> factory in self.allFactorys)
+    {
+        if (factory.configure.platformType == platformType)
+        {
+            return factory;
+        }
+    }
     
-    return [[self.allFactorys filteredArrayUsingPredicate:predicate] firstObject];
+    return NULL;
 }
+
 
 @end

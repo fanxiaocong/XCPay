@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'XCPay_Example' do
+  pod 'XCPay', :path => '../'
+
+  target 'XCPay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

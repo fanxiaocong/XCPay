@@ -20,6 +20,8 @@ XCPay：集成第三方支付，由于微信的SDK可能会出现在其他第三
 
   s.platform         = :ios, "9"
   s.static_framework = true
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
   s.subspec 'XCPay' do |mgr|

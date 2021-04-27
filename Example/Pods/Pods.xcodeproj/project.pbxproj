@@ -1,0 +1,1112 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4847ACB1E2799345AA74D9E317048D58 /* AlipaySDK-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 48CE3FED3E2D19C4363505B9F04916C7 /* Build configuration list for PBXAggregateTarget "AlipaySDK-iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "AlipaySDK-iOS";
+		};
+		8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4AF0DF2249DC5CF1F6B67BE5469CE54C /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = WechatOpenSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		06DA547332213588E947E477BBA03524 /* XCPayAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A7DE450B4C1A2EEEB7A252BE4DFB1E /* XCPayAppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EADEFB304691B243FF309E0A01A4770 /* XCPayFactoryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EF975D87E90CE1F9507DC83B0DFAF11 /* XCPayFactoryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23E6F3512251427CEE9809BD24F996CC /* WXPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BACA7B528B41F7B891CA449468CB68 /* WXPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28178BC6842EED2C018629F0FB0BE611 /* Pods-XCPay_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CD7DF9F6F6117F95EF54C1743AB8D5 /* Pods-XCPay_Example-dummy.m */; };
+		29083426FB22AFA475118DDFD2AE60FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2CE430F755BFC01DFC17831A07F3022A /* XCPayAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB883CE4063D635E07A9C637FC339AD /* XCPayAppDelegate.m */; };
+		2D3E8D9BA9343D834CC72B85D63749E1 /* AlipayFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C8516C1CB5A69101A091D76DAFCCF767 /* AlipayFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D7FC33BF6B6DA4E446811B9A758AC65 /* Alipay.h in Headers */ = {isa = PBXBuildFile; fileRef = 560735B5919E0ABF8871C7CF7445E1E3 /* Alipay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2FEBE1F1F2AE630952FDD8234D0FF7 /* Pods-XCPay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDFB96BD8CEEB2F1062FA757CE633DA /* Pods-XCPay_Tests-dummy.m */; };
+		4BAB450D5541F3161BAA85053D915C4E /* Pods-XCPay_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 038AEA629041EE269576CA86B27A1C46 /* Pods-XCPay_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D43D700546825B33EEF6A42C0FF3288 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5378F08AE9F4D8469DC8791C6E6A706A /* WXPay.m in Sources */ = {isa = PBXBuildFile; fileRef = B27346216504C97B8C33F64A5A9594B8 /* WXPay.m */; };
+		5F511ED9909CC74BBEE8E2A1D7D82853 /* XCPayPlatformConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E80163AFF3668EAD9938EDF75F01D81C /* XCPayPlatformConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6519051B3683DC2D8EB9EB9588945313 /* XCPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 371A662E1C818169815F392AA1451B6A /* XCPayManager.m */; };
+		667D52A30F6AF5E1599929CC6A8ED933 /* XCPayProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB1E8044F27B561FBB3FE8615122C80 /* XCPayProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		725DE2BFC8AF2C358E0CAB0F7C96D21B /* XCPayPlatformConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = D412B5EC831A23CFD6D8C5282E5E005A /* XCPayPlatformConfigure.m */; };
+		7AD8C3944922A733BA66212347CCEA6D /* XCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA051ED7CB91EC7F31EE4E127F34126 /* XCPayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B9EF74B09862899D98CBD188556F6EC /* Alipay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAFD288647B8B1DB12217B53A1DC2B3 /* Alipay.m */; };
+		7FC2BB960B6E45ECA1A6A5AB38D94653 /* XCPay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A2C7362B1079EB47595C77C16BF23B /* XCPay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FD182CF2B42A4768316878F17CE479E /* WXPayOrderInfoProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CB116CBFB2E11975D3D9ACA21F9CBB /* WXPayOrderInfoProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		895A073AA1DFDE35957D60D109A41CA6 /* AlipayFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C5E7B49AF12C160E9F8A61303D804 /* AlipayFactory.m */; };
+		9A20A0D3FAE107094514F49EC190D9F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C77EFFFDBE764AF9E82594342E6188A7 /* XCPay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1194F09C9BCB72F244AE1AF7FC886B6 /* XCPay-dummy.m */; };
+		D165BAF2AA9924867CC62AB0E64C4EA3 /* WXPayFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D29E1B983B01037E9B1007DF3D016A5 /* WXPayFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2EB1F4785CF37FFE84C983D55A5295E /* WXPayFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E96CEC2E255B82C115550825CC581F /* WXPayFactory.m */; };
+		F03E16D3157D1B32DB445A6FDCA6442B /* Pods-XCPay_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA49BE2BBA5E4F25095D2E0DCA8899B /* Pods-XCPay_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51E256733697F97CF6D52BBEBC16847 /* XCPayAppDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B480439AA85C9F4DD7030302DBDD14E /* XCPayAppDelegateProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26BA8852B27B58A42F1A9D981B3D0EDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
+			remoteInfo = WechatOpenSDK;
+		};
+		B1A690358F0D86BB7ECF7A12788380DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4847ACB1E2799345AA74D9E317048D58;
+			remoteInfo = "AlipaySDK-iOS";
+		};
+		E43E4252C8E18652174B735F9D37A01D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E73035207FCB31AE292E0B729438192;
+			remoteInfo = XCPay;
+		};
+		E47A107B026356477275FAEF996FAE88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44159A551B01F924F2BE0AC3562201EB;
+			remoteInfo = "Pods-XCPay_Example";
+		};
+		E49D30BFA4230D0495322D25772E29D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4847ACB1E2799345AA74D9E317048D58;
+			remoteInfo = "AlipaySDK-iOS";
+		};
+		ECA3407921B7528E80DA512D5C46B1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
+			remoteInfo = WechatOpenSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038AEA629041EE269576CA86B27A1C46 /* Pods-XCPay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCPay_Tests-umbrella.h"; sourceTree = "<group>"; };
+		068175A22BCA30AE4ED28C82E89BF604 /* Pods_XCPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCPay_Tests.framework; path = "Pods-XCPay_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0C5E7B49AF12C160E9F8A61303D804 /* AlipayFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AlipayFactory.m; path = XCPay/Classes/XCPay/Alipay/AlipayFactory.m; sourceTree = "<group>"; };
+		15CE185EB8FE22FCDBFC08F7551AABDC /* Pods-XCPay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCPay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		170AF815F7DA8CF3A7266EAA237EE51F /* XCPay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XCPay-Info.plist"; sourceTree = "<group>"; };
+		19642211AAF463282DFB8AB3D41E902A /* Pods-XCPay_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCPay_Tests-Info.plist"; sourceTree = "<group>"; };
+		1E0E58C28B79139D7CB55D2E4D515038 /* WechatOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.release.xcconfig; sourceTree = "<group>"; };
+		2FA051ED7CB91EC7F31EE4E127F34126 /* XCPayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCPayManager.h; path = XCPay/Classes/XCPay/XCPay/XCPayManager.h; sourceTree = "<group>"; };
+		314FA11E0FBE323D53A52082DA093F35 /* Pods_XCPay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XCPay_Example.framework; path = "Pods-XCPay_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		371A662E1C818169815F392AA1451B6A /* XCPayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCPayManager.m; path = XCPay/Classes/XCPay/XCPay/XCPayManager.m; sourceTree = "<group>"; };
+		38CB116CBFB2E11975D3D9ACA21F9CBB /* WXPayOrderInfoProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXPayOrderInfoProtocol.h; path = XCPay/Classes/XCPay/WXPay/WXPayOrderInfoProtocol.h; sourceTree = "<group>"; };
+		3D29E1B983B01037E9B1007DF3D016A5 /* WXPayFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXPayFactory.h; path = XCPay/Classes/XCPay/WXPay/WXPayFactory.h; sourceTree = "<group>"; };
+		439BC51372D263CC9F4FD6B9425107A5 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.8.7.1/WXApiObject.h; sourceTree = "<group>"; };
+		4970068BB6D6DAF64FCF70981AB1D31A /* XCPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCPay-prefix.pch"; sourceTree = "<group>"; };
+		4E5BF848FC286618DEEFC0AB79BA3525 /* XCPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCPay.framework; path = XCPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5596F75ED4BE1CD40F2A635B6324E8A9 /* Pods-XCPay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XCPay_Tests.modulemap"; sourceTree = "<group>"; };
+		560735B5919E0ABF8871C7CF7445E1E3 /* Alipay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Alipay.h; path = XCPay/Classes/XCPay/Alipay/Alipay.h; sourceTree = "<group>"; };
+		5AAFD288647B8B1DB12217B53A1DC2B3 /* Alipay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Alipay.m; path = XCPay/Classes/XCPay/Alipay/Alipay.m; sourceTree = "<group>"; };
+		64B9284B79C7C7090AF1B6FD8F60A5A8 /* Pods-XCPay_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XCPay_Example.modulemap"; sourceTree = "<group>"; };
+		66822AF3574A884D69F69DE230A5DD2F /* Pods-XCPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCPay_Example.release.xcconfig"; sourceTree = "<group>"; };
+		67425B793420A140F2AC54FBC2F5D23C /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.8.7.1/WXApi.h; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76F05287894A267EE14DE6817FA8548F /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		794DD03F9391F7D79E599878A7A75F74 /* WechatOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
+		7AB883CE4063D635E07A9C637FC339AD /* XCPayAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCPayAppDelegate.m; path = XCPay/Classes/XCPay/XCPay/XCPayAppDelegate.m; sourceTree = "<group>"; };
+		7C5BA92511E87DE0385B4FDFC3596C77 /* XCPay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XCPay.modulemap; sourceTree = "<group>"; };
+		7EF975D87E90CE1F9507DC83B0DFAF11 /* XCPayFactoryProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCPayFactoryProtocol.h; sourceTree = "<group>"; };
+		8156E61BBE89E92B3F41B68D24C89A1F /* XCPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCPay.debug.xcconfig; sourceTree = "<group>"; };
+		825592138E480E9DE09478E1282E19AA /* Pods-XCPay_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCPay_Example-Info.plist"; sourceTree = "<group>"; };
+		88BACA7B528B41F7B891CA449468CB68 /* WXPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXPay.h; path = XCPay/Classes/XCPay/WXPay/WXPay.h; sourceTree = "<group>"; };
+		8B480439AA85C9F4DD7030302DBDD14E /* XCPayAppDelegateProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCPayAppDelegateProtocol.h; sourceTree = "<group>"; };
+		8BD13B9C14AC4E587C34B6FA5F47772F /* Pods-XCPay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCPay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93DA5E5A191FA6A31403753D6AD6D542 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = OpenSDK1.8.7.1/libWeChatSDK.a; sourceTree = "<group>"; };
+		94570EFE00AE8A53ABE3E719FA9BDE56 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9BCCE7A311F85C8977229967B47026AF /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.8.7.1/WechatAuthSDK.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F10D18B681CAFF8036BC5B0505CD889 /* AlipaySDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlipaySDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A05980AAA55959E217AE6843FDD498FC /* Pods-XCPay_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XCPay_Example-resources.sh"; sourceTree = "<group>"; };
+		AC49903E8EE6676AA961807426F94A9E /* Pods-XCPay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCPay_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AFA49BE2BBA5E4F25095D2E0DCA8899B /* Pods-XCPay_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCPay_Example-umbrella.h"; sourceTree = "<group>"; };
+		B088574C85172B5EEB40E97E78DCA0AF /* XCPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCPay.release.xcconfig; sourceTree = "<group>"; };
+		B0A2C7362B1079EB47595C77C16BF23B /* XCPay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCPay-umbrella.h"; sourceTree = "<group>"; };
+		B1194F09C9BCB72F244AE1AF7FC886B6 /* XCPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCPay-dummy.m"; sourceTree = "<group>"; };
+		B27346216504C97B8C33F64A5A9594B8 /* WXPay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXPay.m; path = XCPay/Classes/XCPay/WXPay/WXPay.m; sourceTree = "<group>"; };
+		B2CAEF8C3B647EDAF7F9AAB5838D7E12 /* Pods-XCPay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCPay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6BABDA408D8176CC1A46B5408989D66 /* AlipaySDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlipaySDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BE8B82FF30E736EA09F52E65D779D089 /* XCPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XCPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C8516C1CB5A69101A091D76DAFCCF767 /* AlipayFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlipayFactory.h; path = XCPay/Classes/XCPay/Alipay/AlipayFactory.h; sourceTree = "<group>"; };
+		C9A1F1D25E0FDF902DEF01BD72E2C37B /* Pods-XCPay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCPay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		CCDFB96BD8CEEB2F1062FA757CE633DA /* Pods-XCPay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCPay_Tests-dummy.m"; sourceTree = "<group>"; };
+		D412B5EC831A23CFD6D8C5282E5E005A /* XCPayPlatformConfigure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XCPayPlatformConfigure.m; path = XCPay/Classes/XCPay/XCPay/XCPayPlatformConfigure.m; sourceTree = "<group>"; };
+		DBFB22873A1132C6C249EEDE57E096C6 /* Pods-XCPay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCPay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DDB1E8044F27B561FBB3FE8615122C80 /* XCPayProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCPayProtocol.h; sourceTree = "<group>"; };
+		E1D5A9B9413C02EA9F5DCB53A5C13B5B /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		E2E96CEC2E255B82C115550825CC581F /* WXPayFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXPayFactory.m; path = XCPay/Classes/XCPay/WXPay/WXPayFactory.m; sourceTree = "<group>"; };
+		E80163AFF3668EAD9938EDF75F01D81C /* XCPayPlatformConfigure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCPayPlatformConfigure.h; path = XCPay/Classes/XCPay/XCPay/XCPayPlatformConfigure.h; sourceTree = "<group>"; };
+		F0A7DE450B4C1A2EEEB7A252BE4DFB1E /* XCPayAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XCPayAppDelegate.h; path = XCPay/Classes/XCPay/XCPay/XCPayAppDelegate.h; sourceTree = "<group>"; };
+		F5CD7DF9F6F6117F95EF54C1743AB8D5 /* Pods-XCPay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCPay_Example-dummy.m"; sourceTree = "<group>"; };
+		F6D1297B5F59FACCF30668FDC05BE185 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F79695A4A16F81216D4276414582EA47 /* Pods-XCPay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCPay_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51984828C257F2B4FC635DB15ACFEE20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A20A0D3FAE107094514F49EC190D9F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6D57895B9BB30EE65D9F8D7C7D267A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29083426FB22AFA475118DDFD2AE60FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66DC2AD0C5BDC3C7FE83A393F71143D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D43D700546825B33EEF6A42C0FF3288 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031585440D19C24408251CCDBD89E8B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0557B4D96C5422E89B692ACEE990113C /* AlipaySDK-iOS */,
+				9E7DB361D0C4069D7549E46CD56B4F4D /* WechatOpenSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0557B4D96C5422E89B692ACEE990113C /* AlipaySDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3FA60FE65F3816CA44D72189CF1ED4F3 /* Frameworks */,
+				DEB4F4EC4DB72C8F198C9A4D0262E812 /* Resources */,
+				5B48ECBE877EC309263FB424747415AB /* Support Files */,
+			);
+			name = "AlipaySDK-iOS";
+			path = "AlipaySDK-iOS";
+			sourceTree = "<group>";
+		};
+		06064D14737B225A020B9BF10B04C2C3 /* XCPay */ = {
+			isa = PBXGroup;
+			children = (
+				3832EF0EF9F849D67E2CA06B5BB5121A /* Alipay */,
+				9E43D7BE6CBED446158C046261073764 /* Pod */,
+				B9D6A42D8084CBB88677A44A14FD835E /* Support Files */,
+				0F3C4F9F8F4C3796D4984027FC8A495F /* WXPay */,
+				8DD74A0441ADF2882C2B9EDC2461C01B /* XCPay */,
+			);
+			name = XCPay;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		0F3C4F9F8F4C3796D4984027FC8A495F /* WXPay */ = {
+			isa = PBXGroup;
+			children = (
+				88BACA7B528B41F7B891CA449468CB68 /* WXPay.h */,
+				B27346216504C97B8C33F64A5A9594B8 /* WXPay.m */,
+				3D29E1B983B01037E9B1007DF3D016A5 /* WXPayFactory.h */,
+				E2E96CEC2E255B82C115550825CC581F /* WXPayFactory.m */,
+				38CB116CBFB2E11975D3D9ACA21F9CBB /* WXPayOrderInfoProtocol.h */,
+			);
+			name = WXPay;
+			sourceTree = "<group>";
+		};
+		3832EF0EF9F849D67E2CA06B5BB5121A /* Alipay */ = {
+			isa = PBXGroup;
+			children = (
+				560735B5919E0ABF8871C7CF7445E1E3 /* Alipay.h */,
+				5AAFD288647B8B1DB12217B53A1DC2B3 /* Alipay.m */,
+				C8516C1CB5A69101A091D76DAFCCF767 /* AlipayFactory.h */,
+				0C0C5E7B49AF12C160E9F8A61303D804 /* AlipayFactory.m */,
+			);
+			name = Alipay;
+			sourceTree = "<group>";
+		};
+		3FA60FE65F3816CA44D72189CF1ED4F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76F05287894A267EE14DE6817FA8548F /* AlipaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41D958491541FB35EF399B747B91EAD0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06064D14737B225A020B9BF10B04C2C3 /* XCPay */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B48ECBE877EC309263FB424747415AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F10D18B681CAFF8036BC5B0505CD889 /* AlipaySDK-iOS.debug.xcconfig */,
+				B6BABDA408D8176CC1A46B5408989D66 /* AlipaySDK-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlipaySDK-iOS";
+			sourceTree = "<group>";
+		};
+		6ABDE9F9FCA1A93010010618134FB8B6 /* XCPayProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				8B480439AA85C9F4DD7030302DBDD14E /* XCPayAppDelegateProtocol.h */,
+				7EF975D87E90CE1F9507DC83B0DFAF11 /* XCPayFactoryProtocol.h */,
+				DDB1E8044F27B561FBB3FE8615122C80 /* XCPayProtocol.h */,
+			);
+			name = XCPayProtocol;
+			path = XCPay/Classes/XCPay/XCPay/XCPayProtocol;
+			sourceTree = "<group>";
+		};
+		8DD74A0441ADF2882C2B9EDC2461C01B /* XCPay */ = {
+			isa = PBXGroup;
+			children = (
+				F0A7DE450B4C1A2EEEB7A252BE4DFB1E /* XCPayAppDelegate.h */,
+				7AB883CE4063D635E07A9C637FC339AD /* XCPayAppDelegate.m */,
+				2FA051ED7CB91EC7F31EE4E127F34126 /* XCPayManager.h */,
+				371A662E1C818169815F392AA1451B6A /* XCPayManager.m */,
+				E80163AFF3668EAD9938EDF75F01D81C /* XCPayPlatformConfigure.h */,
+				D412B5EC831A23CFD6D8C5282E5E005A /* XCPayPlatformConfigure.m */,
+				6ABDE9F9FCA1A93010010618134FB8B6 /* XCPayProtocol */,
+			);
+			name = XCPay;
+			sourceTree = "<group>";
+		};
+		9E43D7BE6CBED446158C046261073764 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				94570EFE00AE8A53ABE3E719FA9BDE56 /* LICENSE */,
+				F6D1297B5F59FACCF30668FDC05BE185 /* README.md */,
+				BE8B82FF30E736EA09F52E65D779D089 /* XCPay.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9E7DB361D0C4069D7549E46CD56B4F4D /* WechatOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9BCCE7A311F85C8977229967B47026AF /* WechatAuthSDK.h */,
+				67425B793420A140F2AC54FBC2F5D23C /* WXApi.h */,
+				439BC51372D263CC9F4FD6B9425107A5 /* WXApiObject.h */,
+				E0952E71F543817B0C2800D7D6FDCB18 /* Frameworks */,
+				C8E3DE8FDD1613BFE45CEE3D7D153815 /* Support Files */,
+			);
+			name = WechatOpenSDK;
+			path = WechatOpenSDK;
+			sourceTree = "<group>";
+		};
+		B9D6A42D8084CBB88677A44A14FD835E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BA92511E87DE0385B4FDFC3596C77 /* XCPay.modulemap */,
+				B1194F09C9BCB72F244AE1AF7FC886B6 /* XCPay-dummy.m */,
+				170AF815F7DA8CF3A7266EAA237EE51F /* XCPay-Info.plist */,
+				4970068BB6D6DAF64FCF70981AB1D31A /* XCPay-prefix.pch */,
+				B0A2C7362B1079EB47595C77C16BF23B /* XCPay-umbrella.h */,
+				8156E61BBE89E92B3F41B68D24C89A1F /* XCPay.debug.xcconfig */,
+				B088574C85172B5EEB40E97E78DCA0AF /* XCPay.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XCPay";
+			sourceTree = "<group>";
+		};
+		C6B39BB66D318B1899254C3BB934445F /* Pods-XCPay_Example */ = {
+			isa = PBXGroup;
+			children = (
+				64B9284B79C7C7090AF1B6FD8F60A5A8 /* Pods-XCPay_Example.modulemap */,
+				8BD13B9C14AC4E587C34B6FA5F47772F /* Pods-XCPay_Example-acknowledgements.markdown */,
+				C9A1F1D25E0FDF902DEF01BD72E2C37B /* Pods-XCPay_Example-acknowledgements.plist */,
+				F5CD7DF9F6F6117F95EF54C1743AB8D5 /* Pods-XCPay_Example-dummy.m */,
+				825592138E480E9DE09478E1282E19AA /* Pods-XCPay_Example-Info.plist */,
+				A05980AAA55959E217AE6843FDD498FC /* Pods-XCPay_Example-resources.sh */,
+				AFA49BE2BBA5E4F25095D2E0DCA8899B /* Pods-XCPay_Example-umbrella.h */,
+				AC49903E8EE6676AA961807426F94A9E /* Pods-XCPay_Example.debug.xcconfig */,
+				66822AF3574A884D69F69DE230A5DD2F /* Pods-XCPay_Example.release.xcconfig */,
+			);
+			name = "Pods-XCPay_Example";
+			path = "Target Support Files/Pods-XCPay_Example";
+			sourceTree = "<group>";
+		};
+		C78373F8542E424F41970B891B6985DF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6B39BB66D318B1899254C3BB934445F /* Pods-XCPay_Example */,
+				CF999C9D10B81B46CEEE98EAACD7E2C0 /* Pods-XCPay_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C8E3DE8FDD1613BFE45CEE3D7D153815 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				794DD03F9391F7D79E599878A7A75F74 /* WechatOpenSDK.debug.xcconfig */,
+				1E0E58C28B79139D7CB55D2E4D515038 /* WechatOpenSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WechatOpenSDK";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				41D958491541FB35EF399B747B91EAD0 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				031585440D19C24408251CCDBD89E8B8 /* Pods */,
+				F51B9B37B81BE8D741BBA3ACA23095AE /* Products */,
+				C78373F8542E424F41970B891B6985DF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF999C9D10B81B46CEEE98EAACD7E2C0 /* Pods-XCPay_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5596F75ED4BE1CD40F2A635B6324E8A9 /* Pods-XCPay_Tests.modulemap */,
+				DBFB22873A1132C6C249EEDE57E096C6 /* Pods-XCPay_Tests-acknowledgements.markdown */,
+				15CE185EB8FE22FCDBFC08F7551AABDC /* Pods-XCPay_Tests-acknowledgements.plist */,
+				CCDFB96BD8CEEB2F1062FA757CE633DA /* Pods-XCPay_Tests-dummy.m */,
+				19642211AAF463282DFB8AB3D41E902A /* Pods-XCPay_Tests-Info.plist */,
+				038AEA629041EE269576CA86B27A1C46 /* Pods-XCPay_Tests-umbrella.h */,
+				B2CAEF8C3B647EDAF7F9AAB5838D7E12 /* Pods-XCPay_Tests.debug.xcconfig */,
+				F79695A4A16F81216D4276414582EA47 /* Pods-XCPay_Tests.release.xcconfig */,
+			);
+			name = "Pods-XCPay_Tests";
+			path = "Target Support Files/Pods-XCPay_Tests";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEB4F4EC4DB72C8F198C9A4D0262E812 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1D5A9B9413C02EA9F5DCB53A5C13B5B /* AlipaySDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E0952E71F543817B0C2800D7D6FDCB18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93DA5E5A191FA6A31403753D6AD6D542 /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F51B9B37B81BE8D741BBA3ACA23095AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				314FA11E0FBE323D53A52082DA093F35 /* Pods_XCPay_Example.framework */,
+				068175A22BCA30AE4ED28C82E89BF604 /* Pods_XCPay_Tests.framework */,
+				4E5BF848FC286618DEEFC0AB79BA3525 /* XCPay.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		043488435EFC77C55DBE79691BCFC115 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7FC33BF6B6DA4E446811B9A758AC65 /* Alipay.h in Headers */,
+				2D3E8D9BA9343D834CC72B85D63749E1 /* AlipayFactory.h in Headers */,
+				23E6F3512251427CEE9809BD24F996CC /* WXPay.h in Headers */,
+				D165BAF2AA9924867CC62AB0E64C4EA3 /* WXPayFactory.h in Headers */,
+				7FD182CF2B42A4768316878F17CE479E /* WXPayOrderInfoProtocol.h in Headers */,
+				7FC2BB960B6E45ECA1A6A5AB38D94653 /* XCPay-umbrella.h in Headers */,
+				06DA547332213588E947E477BBA03524 /* XCPayAppDelegate.h in Headers */,
+				F51E256733697F97CF6D52BBEBC16847 /* XCPayAppDelegateProtocol.h in Headers */,
+				1EADEFB304691B243FF309E0A01A4770 /* XCPayFactoryProtocol.h in Headers */,
+				7AD8C3944922A733BA66212347CCEA6D /* XCPayManager.h in Headers */,
+				5F511ED9909CC74BBEE8E2A1D7D82853 /* XCPayPlatformConfigure.h in Headers */,
+				667D52A30F6AF5E1599929CC6A8ED933 /* XCPayProtocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A2DB2C144CE17A29560CC605CCB32C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAB450D5541F3161BAA85053D915C4E /* Pods-XCPay_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A25B972504C034C2EE03310474257CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03E16D3157D1B32DB445A6FDCA6442B /* Pods-XCPay_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		44159A551B01F924F2BE0AC3562201EB /* Pods-XCPay_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E00C7F10CF09ECDD0E3A6FD8B1D8CF /* Build configuration list for PBXNativeTarget "Pods-XCPay_Example" */;
+			buildPhases = (
+				9A25B972504C034C2EE03310474257CF /* Headers */,
+				E783F304EA61B7BC39F708220F2CE6AB /* Sources */,
+				C66DC2AD0C5BDC3C7FE83A393F71143D /* Frameworks */,
+				59CB46036E097A11FE4BC60023E19EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41B0853019866C7C9656B3583D5E92AC /* PBXTargetDependency */,
+				A37DBC184DD5652DB8D981EBDF3FC9F5 /* PBXTargetDependency */,
+				0BDAACF472FD819FC56E138E4E185361 /* PBXTargetDependency */,
+			);
+			name = "Pods-XCPay_Example";
+			productName = "Pods-XCPay_Example";
+			productReference = 314FA11E0FBE323D53A52082DA093F35 /* Pods_XCPay_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E73035207FCB31AE292E0B729438192 /* XCPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 313BCBE6AFF470D6AA4FEDB868AFB875 /* Build configuration list for PBXNativeTarget "XCPay" */;
+			buildPhases = (
+				043488435EFC77C55DBE79691BCFC115 /* Headers */,
+				38C38D310F05D4334D39FC8AAF431459 /* Sources */,
+				51984828C257F2B4FC635DB15ACFEE20 /* Frameworks */,
+				C405928EDF691A4659345D4FE0EC4A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF1EFEC1DC0729B16F455A2AA52DE4B4 /* PBXTargetDependency */,
+				F813976A81E6E116FFE0B76D627B80DF /* PBXTargetDependency */,
+			);
+			name = XCPay;
+			productName = XCPay;
+			productReference = 4E5BF848FC286618DEEFC0AB79BA3525 /* XCPay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD012D119A930D30A1207333A3F2DADD /* Pods-XCPay_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F67B222A99B5652EA269BD34F40813B /* Build configuration list for PBXNativeTarget "Pods-XCPay_Tests" */;
+			buildPhases = (
+				46A2DB2C144CE17A29560CC605CCB32C /* Headers */,
+				52D58E852EE25D4360129CE943AFBEF8 /* Sources */,
+				6A6D57895B9BB30EE65D9F8D7C7D267A /* Frameworks */,
+				D446245836AFE2ACA8A024268017998A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E266F01B54BE63D7DC428F9CCF7A116 /* PBXTargetDependency */,
+			);
+			name = "Pods-XCPay_Tests";
+			productName = "Pods-XCPay_Tests";
+			productReference = 068175A22BCA30AE4ED28C82E89BF604 /* Pods_XCPay_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F51B9B37B81BE8D741BBA3ACA23095AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4847ACB1E2799345AA74D9E317048D58 /* AlipaySDK-iOS */,
+				44159A551B01F924F2BE0AC3562201EB /* Pods-XCPay_Example */,
+				BD012D119A930D30A1207333A3F2DADD /* Pods-XCPay_Tests */,
+				8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */,
+				8E73035207FCB31AE292E0B729438192 /* XCPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59CB46036E097A11FE4BC60023E19EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C405928EDF691A4659345D4FE0EC4A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D446245836AFE2ACA8A024268017998A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38C38D310F05D4334D39FC8AAF431459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9EF74B09862899D98CBD188556F6EC /* Alipay.m in Sources */,
+				895A073AA1DFDE35957D60D109A41CA6 /* AlipayFactory.m in Sources */,
+				5378F08AE9F4D8469DC8791C6E6A706A /* WXPay.m in Sources */,
+				E2EB1F4785CF37FFE84C983D55A5295E /* WXPayFactory.m in Sources */,
+				C77EFFFDBE764AF9E82594342E6188A7 /* XCPay-dummy.m in Sources */,
+				2CE430F755BFC01DFC17831A07F3022A /* XCPayAppDelegate.m in Sources */,
+				6519051B3683DC2D8EB9EB9588945313 /* XCPayManager.m in Sources */,
+				725DE2BFC8AF2C358E0CAB0F7C96D21B /* XCPayPlatformConfigure.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D58E852EE25D4360129CE943AFBEF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B2FEBE1F1F2AE630952FDD8234D0FF7 /* Pods-XCPay_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E783F304EA61B7BC39F708220F2CE6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28178BC6842EED2C018629F0FB0BE611 /* Pods-XCPay_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BDAACF472FD819FC56E138E4E185361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XCPay;
+			target = 8E73035207FCB31AE292E0B729438192 /* XCPay */;
+			targetProxy = E43E4252C8E18652174B735F9D37A01D /* PBXContainerItemProxy */;
+		};
+		41B0853019866C7C9656B3583D5E92AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AlipaySDK-iOS";
+			target = 4847ACB1E2799345AA74D9E317048D58 /* AlipaySDK-iOS */;
+			targetProxy = E49D30BFA4230D0495322D25772E29D4 /* PBXContainerItemProxy */;
+		};
+		6E266F01B54BE63D7DC428F9CCF7A116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XCPay_Example";
+			target = 44159A551B01F924F2BE0AC3562201EB /* Pods-XCPay_Example */;
+			targetProxy = E47A107B026356477275FAEF996FAE88 /* PBXContainerItemProxy */;
+		};
+		A37DBC184DD5652DB8D981EBDF3FC9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WechatOpenSDK;
+			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
+			targetProxy = 26BA8852B27B58A42F1A9D981B3D0EDD /* PBXContainerItemProxy */;
+		};
+		EF1EFEC1DC0729B16F455A2AA52DE4B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AlipaySDK-iOS";
+			target = 4847ACB1E2799345AA74D9E317048D58 /* AlipaySDK-iOS */;
+			targetProxy = B1A690358F0D86BB7ECF7A12788380DA /* PBXContainerItemProxy */;
+		};
+		F813976A81E6E116FFE0B76D627B80DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WechatOpenSDK;
+			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
+			targetProxy = ECA3407921B7528E80DA512D5C46B1D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02D46C947E1FEF1D49D00E00669784E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F10D18B681CAFF8036BC5B0505CD889 /* AlipaySDK-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19EB48C8530FBA1DDEA8FFCDD602F307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0E58C28B79139D7CB55D2E4D515038 /* WechatOpenSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		78D43293B43C0F0C013EB73CECBAAAEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8156E61BBE89E92B3F41B68D24C89A1F /* XCPay.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCPay/XCPay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCPay/XCPay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/XCPay/XCPay.modulemap";
+				PRODUCT_MODULE_NAME = XCPay;
+				PRODUCT_NAME = XCPay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		941FEC10205007ADD4A54FC2108D1BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79695A4A16F81216D4276414582EA47 /* Pods-XCPay_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XCPay_Tests/Pods-XCPay_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XCPay_Tests/Pods-XCPay_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6A4E93EAB949E804856679299D2F2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B088574C85172B5EEB40E97E78DCA0AF /* XCPay.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCPay/XCPay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCPay/XCPay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/XCPay/XCPay.modulemap";
+				PRODUCT_MODULE_NAME = XCPay;
+				PRODUCT_NAME = XCPay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B8D36FAD20C39157B212B7E021BFE77A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC49903E8EE6676AA961807426F94A9E /* Pods-XCPay_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XCPay_Example/Pods-XCPay_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XCPay_Example/Pods-XCPay_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D3C6594EAE79D3F1DF68DB19E0F4A9B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BABDA408D8176CC1A46B5408989D66 /* AlipaySDK-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E723CB7F8144398D7664E645B8C8DC60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66822AF3574A884D69F69DE230A5DD2F /* Pods-XCPay_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XCPay_Example/Pods-XCPay_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XCPay_Example/Pods-XCPay_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9034C3C8B274D7A7C62065B44D4B763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 794DD03F9391F7D79E599878A7A75F74 /* WechatOpenSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F815C6B1216AF128E41470092ACD7608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CAEF8C3B647EDAF7F9AAB5838D7E12 /* Pods-XCPay_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XCPay_Tests/Pods-XCPay_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XCPay_Tests/Pods-XCPay_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20E00C7F10CF09ECDD0E3A6FD8B1D8CF /* Build configuration list for PBXNativeTarget "Pods-XCPay_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D36FAD20C39157B212B7E021BFE77A /* Debug */,
+				E723CB7F8144398D7664E645B8C8DC60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		313BCBE6AFF470D6AA4FEDB868AFB875 /* Build configuration list for PBXNativeTarget "XCPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D43293B43C0F0C013EB73CECBAAAEA /* Debug */,
+				A6A4E93EAB949E804856679299D2F2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CE3FED3E2D19C4363505B9F04916C7 /* Build configuration list for PBXAggregateTarget "AlipaySDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D46C947E1FEF1D49D00E00669784E4 /* Debug */,
+				D3C6594EAE79D3F1DF68DB19E0F4A9B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF0DF2249DC5CF1F6B67BE5469CE54C /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9034C3C8B274D7A7C62065B44D4B763 /* Debug */,
+				19EB48C8530FBA1DDEA8FFCDD602F307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F67B222A99B5652EA269BD34F40813B /* Build configuration list for PBXNativeTarget "Pods-XCPay_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F815C6B1216AF128E41470092ACD7608 /* Debug */,
+				941FEC10205007ADD4A54FC2108D1BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

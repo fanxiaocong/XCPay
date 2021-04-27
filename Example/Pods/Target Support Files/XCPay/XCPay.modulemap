@@ -1,0 +1,6 @@
+framework module XCPay {
+  umbrella header "XCPay-umbrella.h"
+
+  export *
+  module * { export * }
+}

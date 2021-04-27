@@ -1,42 +1,57 @@
-#
-# Be sure to run `pod lib lint XCPay.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
-  s.name             = 'XCPay'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XCPay.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.name         = "XCPay"
+  s.version      = "1.3.0"
+  s.summary      = "集成第三方支付，由于微信的SDK可能会出现在其他第三方SDK中（友盟、ShareSDK），因此如果不需要导入微信SDK，请在 pod install 的前面加如下：
+不导入微信SDK：    NO_WXPAY=1 pod install
+不导入支付宝SDK：  NO_ALIYPAY=1 pod install"
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description  = <<-DESC
+XCPay：集成第三方支付，由于微信的SDK可能会出现在其他第三方SDK中（友盟、ShareSDK），因此如果不需要导入微信SDK，请在 pod install 的前面加如下：
+不导入微信SDK：    NO_WXPAY=1 pod install
+不导入支付宝SDK：  NO_ALIYPAY=1 pod install
+                   DESC
 
-  s.homepage         = 'https://github.com/fanxiaocong/XCPay'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'fanxiaocong' => '1016697223@qq.com' }
-  s.source           = { :git => 'https://github.com/fanxiaocong/XCPay.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage     = "https://github.com/fanxiaocong/XCPay"
+  s.license      = "MIT"
+  s.author       = { "樊小聪" => "1016697223@qq.com" }
+  s.source       = { :git => "https://github.com/fanxiaocong/XCPay.git", :tag => "#{s.version}" }
 
-  s.ios.deployment_target = '9.0'
+  s.platform         = :ios, "9"
+  s.static_framework = true
 
-  s.source_files = 'XCPay/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'XCPay' => ['XCPay/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'XCPay' do |mgr|
+    mgr.source_files = 'XCPay/Classes/XCPay/XCPay/*.{h,m}', 'XCPay/Classes/XCPay/XCPay/XCPayProtocol/*.{h,m}'
+  end
+
+
+  # 支付宝支付
+  s.subspec 'Alipay' do |ali|
+    ali.source_files = 'XCPay/Classes/XCPay/Alipay/*.{h,m}'
+    ali.dependency 'XCPay/XCPay'
+
+    if ENV['NO_ALIYPAY']
+    else
+        # ali.dependency 'XCThirdPlatformSDK/AlipaySDK', '~> 0.0.1'
+     ali.dependency 'AlipaySDK-iOS', '~> 15.7.9'
+    end
+  end
+
+
+  # 微信支付
+  s.subspec 'WXPay' do |wx|
+    wx.source_files = 'XCPay/Classes/XCPay/WXPay/*.{h,m}'
+    wx.dependency 'XCPay/XCPay'
+
+    if ENV['NO_WXPAY']
+    else
+        # wx.dependency 'XCThirdPlatformSDK/WeChatSDK', '~> 0.0.1'
+    wx.dependency 'WechatOpenSDK', '~> 1.8.7.1'
+    end
+  end
+
+
 end
+
